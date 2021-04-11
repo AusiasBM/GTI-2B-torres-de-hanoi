@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Torres_de_Hanoi
 {
-    class Disco
+    public class Disco
     {
 
         public int Valor { get; set; } // Valor del disco

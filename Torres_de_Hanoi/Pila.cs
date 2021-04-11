@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Torres_de_Hanoi
 {
-    class Pila
+    public class Pila
     {
         public int Size { get; set; } // Cantidad de elementos que tiene la pila
         public int Top { get; set; } // Valor del elemento más alto de la lista
-        public List<Disco> Elementos { get; set; } // Lista de los discos que tiene la pila
+        
+        public List<Disco> Elementos = new List<Disco>(); // Lista de los discos que tiene la pila
 
         // Permite colocar un disco a la pila
         public void push(Disco d)
@@ -30,9 +31,9 @@ namespace Torres_de_Hanoi
                 Top = 0;
             } else {
                 // Sinó Top es el siguiente disco
-                Top = Elementos[Elementos.Count - 2].Valor;
+                Top = Elementos[Size].Valor;
             }
-            return Elementos[Elementos.Count - 1];
+            return Elementos[Size];
         }          
 
         // Nos dice si la pila está vacía o no.
