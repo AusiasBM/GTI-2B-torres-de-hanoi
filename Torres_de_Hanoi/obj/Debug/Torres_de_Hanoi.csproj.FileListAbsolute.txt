@@ -1,0 +1,7 @@
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe.config
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.exe
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\bin\Debug\Torres_de_Hanoi.pdb
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csprojAssemblyReference.cache
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.csproj.CoreCompileInputs.cache
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.exe
+C:\Users\AusiasBM\Documents\GTI\Algorítmica\torres-de-hanoi\Torres_de_Hanoi\obj\Debug\Torres_de_Hanoi.pdb
