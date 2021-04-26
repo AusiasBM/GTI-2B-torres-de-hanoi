@@ -16,11 +16,27 @@ namespace Torres_de_Hanoi
             Pila fin = new Pila();
 
             Console.WriteLine("¿Cuantos discos quieres?");
-            int cantidadDiscos;
-            cantidadDiscos = int.Parse(Console.ReadLine());
+            int cantidadDiscos = 0;
             int pesoDisco = 1; // El peso del disco en cada momento que pedimos uno.
             bool pesoCorrecto = false; // Nos dice si el peso introducido es inferior al anterior
-            
+            try
+            {
+                cantidadDiscos = int.Parse(Console.ReadLine());
+                if (cantidadDiscos == 0)
+                {
+                    Console.WriteLine("¿Cuantos discos quieres?");
+                    cantidadDiscos = 0;
+                    cantidadDiscos = int.Parse(Console.ReadLine());
+                }
+                
+                
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Has puesto un valor no aceptado");
+            }
+
+
             for (int i = 1; i <= cantidadDiscos; i++)
             {
                 try
@@ -66,11 +82,11 @@ namespace Torres_de_Hanoi
 
             Hanoi hanoi = new Hanoi();
 
-            //Console.WriteLine("Llamamos a iterativo: ");
-            //int movimientosHechos = hanoi.iterativo( cantidadDiscos, ini, fin, aux );
+            Console.WriteLine("Llamamos a iterativo: ");
+            int movimientosHechos = hanoi.iterativo( cantidadDiscos, ini, fin, aux );
 
-            Console.WriteLine("Llamamos a recursivo: ");
-            int movimientosHechos = hanoi.recursivo(cantidadDiscos, ini, fin, aux);
+            //Console.WriteLine("Llamamos a recursivo: ");
+            //int movimientosHechos = hanoi.recursivo(cantidadDiscos, ini, fin, aux);
 
             double movimientoRequeridos = Math.Pow(2, cantidadDiscos) - 1;
 
