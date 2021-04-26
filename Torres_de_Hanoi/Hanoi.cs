@@ -50,8 +50,6 @@ namespace Torres_de_Hanoi
 
             if ( n % 2 == 0  ){ // Comprovamos si n es par
 
-                Console.WriteLine("Es par");
-                Console.ReadKey();
                 // Mientras no haya solución se hace el while
                 while (fin.Size != n)
                 {
@@ -69,9 +67,7 @@ namespace Torres_de_Hanoi
 
             }
             else{ // Sinó es par entra aquí
-
-                Console.WriteLine("Es impar");
-                Console.ReadKey();
+                 
                 // Mientras no haya solución se hace el while
                 while (fin.Size != n)
                 {
@@ -89,6 +85,27 @@ namespace Torres_de_Hanoi
                     //Console.ReadKey();
                 }
 
+            }
+
+            return m;
+        }
+
+        int m = 0; // Declaramos m, será el número de movimientos utilizados.
+
+        public int recursivo(int n, Pila ini, Pila fin, Pila aux)
+        {
+
+            if (n == 1)
+            {
+                mover_disco(ini, fin);
+                m++;
+            }
+            else
+            {
+                recursivo(n-1, ini, aux, fin);
+                mover_disco(ini, fin);
+                m++;
+                recursivo(n-1, aux, fin, ini);
             }
 
             return m;

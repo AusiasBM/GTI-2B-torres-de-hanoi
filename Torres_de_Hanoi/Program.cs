@@ -66,12 +66,19 @@ namespace Torres_de_Hanoi
 
             Hanoi hanoi = new Hanoi();
 
-            int movimientosHechos = hanoi.iterativo( cantidadDiscos, ini, fin, aux );
+            //Console.WriteLine("Llamamos a iterativo: ");
+            //int movimientosHechos = hanoi.iterativo( cantidadDiscos, ini, fin, aux );
+
+            Console.WriteLine("Llamamos a recursivo: ");
+            int movimientosHechos = hanoi.recursivo(cantidadDiscos, ini, fin, aux);
+
             double movimientoRequeridos = Math.Pow(2, cantidadDiscos) - 1;
 
             Console.WriteLine("Número de discos: " + cantidadDiscos);
             Console.WriteLine("Número de movimentos necesarios mínimos: " + movimientoRequeridos);
             Console.WriteLine("Número de movimentos hechos: " + movimientosHechos);
+
+
 
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
